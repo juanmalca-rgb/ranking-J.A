@@ -1,0 +1,80 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Crear cuenta - SocialPremios</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="auth-container">
+
+    <div class="auth-box">
+
+        <div class="logo">👤</div>
+
+        <h1>Crear cuenta</h1>
+
+        <p class="subtitle">
+            Únete a SocialPremios
+        </p>
+
+        <form id="registerForm">
+
+            <label>Nombre</label>
+
+            <input
+                type="text"
+                id="registerName"
+                placeholder="Tu nombre"
+                required
+            >
+
+            <label>Nombre de usuario</label>
+
+            <input
+                type="text"
+                id="registerUser"
+                placeholder="Ejemplo: juan123"
+                required
+            >
+
+            <label>Contraseña</label>
+
+            <input
+                type="password"
+                id="registerPassword"
+                placeholder="Crea una contraseña"
+                required
+            >
+
+            <button type="submit" class="primary-btn">
+                Crear cuenta
+            </button>
+
+        </form>
+
+        <p id="registerMessage" class="message"></p>
+
+        <div class="auth-links">
+
+            <a href="index.html">
+                ← Volver al inicio
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
+```
