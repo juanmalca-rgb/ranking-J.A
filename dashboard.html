@@ -1,0 +1,186 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>SocialPremios - Panel</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <div>
+        🚀 <strong>SocialPremios</strong>
+    </div>
+
+    <button onclick="logout()" class="logout-btn">
+        Salir
+    </button>
+
+</header>
+
+
+<main class="dashboard">
+
+    <section class="welcome">
+
+        <h1>
+            Hola, <span id="userName">Usuario</span> 👋
+        </h1>
+
+        <p>
+            Participa en campañas y acumula puntos.
+        </p>
+
+    </section>
+
+
+    <!-- ESTADÍSTICAS -->
+
+    <section class="stats">
+
+        <div class="stat-card">
+
+            <span>⭐</span>
+
+            <h3 id="userPoints">
+                0
+            </h3>
+
+            <p>Puntos</p>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>🏆</span>
+
+            <h3 id="userPosition">
+                -
+            </h3>
+
+            <p>Ranking</p>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>📢</span>
+
+            <h3 id="campaignCount">
+                0
+            </h3>
+
+            <p>Campañas</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- REDES -->
+
+    <section class="panel">
+
+        <h2>📱 Redes sociales</h2>
+
+        <p>
+            Accede a tus redes para compartir contenido.
+        </p>
+
+        <div class="social-grid">
+
+            <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="social facebook"
+            >
+                🔵 Facebook
+            </a>
+
+            <a
+                href="https://www.tiktok.com/"
+                target="_blank"
+                class="social tiktok"
+            >
+                🎵 TikTok
+            </a>
+
+            <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="social instagram"
+            >
+                📸 Instagram
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- CAMPAÑAS -->
+
+    <section class="panel">
+
+        <h2>📢 Campañas disponibles</h2>
+
+        <div id="campaigns"></div>
+
+    </section>
+
+
+    <!-- RANKING -->
+
+    <section class="panel">
+
+        <h2>🏆 Ranking</h2>
+
+        <div id="ranking"></div>
+
+    </section>
+
+
+    <!-- PREMIOS -->
+
+    <section class="panel">
+
+        <h2>🎁 Premios</h2>
+
+        <div id="rewards" class="rewards"></div>
+
+    </section>
+
+
+    <!-- HISTORIAL -->
+
+    <section class="panel">
+
+        <h2>📋 Mis solicitudes</h2>
+
+        <div id="myRequests"></div>
+
+    </section>
+
+</main>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
+```
