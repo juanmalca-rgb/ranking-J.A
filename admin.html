@@ -1,0 +1,197 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Administrador - SocialPremios</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <div>
+        🛠️ <strong>Administrador</strong>
+    </div>
+
+    <button onclick="logout()" class="logout-btn">
+        Salir
+    </button>
+
+</header>
+
+
+<main class="dashboard">
+
+    <section class="welcome">
+
+        <h1>Panel de administración</h1>
+
+        <p>
+            Administra usuarios, campañas,
+            publicaciones y premios.
+        </p>
+
+    </section>
+
+
+    <!-- ESTADÍSTICAS -->
+
+    <section class="stats">
+
+        <div class="stat-card">
+
+            <span>👥</span>
+
+            <h3 id="adminUsers">
+                0
+            </h3>
+
+            <p>Usuarios</p>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>📢</span>
+
+            <h3 id="adminCampaigns">
+                0
+            </h3>
+
+            <p>Campañas</p>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>🔎</span>
+
+            <h3 id="adminSubmissions">
+                0
+            </h3>
+
+            <p>Publicaciones pendientes</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CREAR CAMPAÑA -->
+
+    <section class="panel">
+
+        <h2>➕ Crear campaña</h2>
+
+        <form id="campaignForm">
+
+            <label>Nombre</label>
+
+            <input
+                id="campaignName"
+                placeholder="Ej: Campaña TikTok"
+                required
+            >
+
+            <label>Red social</label>
+
+            <select id="campaignSocial">
+
+                <option>Facebook</option>
+                <option>TikTok</option>
+                <option>Instagram</option>
+
+            </select>
+
+            <label>Descripción</label>
+
+            <textarea
+                id="campaignDescription"
+                placeholder="Describe la campaña"
+                required
+            ></textarea>
+
+            <label>Puntos</label>
+
+            <input
+                type="number"
+                id="campaignPoints"
+                min="1"
+                value="50"
+                required
+            >
+
+            <button class="primary-btn">
+                Crear campaña
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- CAMPAÑAS -->
+
+    <section class="panel">
+
+        <h2>📢 Campañas</h2>
+
+        <div id="adminCampaignList"></div>
+
+    </section>
+
+
+    <!-- PUBLICACIONES -->
+
+    <section class="panel">
+
+        <h2>🔎 Publicaciones pendientes</h2>
+
+        <div id="submissions"></div>
+
+    </section>
+
+
+    <!-- CANJES -->
+
+    <section class="panel">
+
+        <h2>🎁 Solicitudes de canje</h2>
+
+        <div id="redemptions"></div>
+
+    </section>
+
+
+    <!-- USUARIOS -->
+
+    <section class="panel">
+
+        <h2>👥 Usuarios</h2>
+
+        <div id="users"></div>
+
+    </section>
+
+</main>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
+```
